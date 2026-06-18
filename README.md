@@ -7,4 +7,5 @@ Extract, parse, and convert Wii EAGL 3D models and terrains into modern GLB file
 <img width="3150" height="1817" alt="image" src="https://github.com/user-attachments/assets/71defffe-eb6c-43ff-8fe5-a15fedbabbac" />
 
 <img width="3802" height="1792" alt="image" src="https://github.com/user-attachments/assets/7977d7e1-75d6-4683-b476-0b0257402a18" />
-<img width="3837" height="2045" alt="image" src="https://github.com/user-attachments/assets/405e910f-4ef6-4ce2-a2b3-72a78c150f8e" />
+<img width="3780" height="1822" alt="image" src="https://github.com/user-attachments/assets/5ba5a0cc-1e86-4be0-a89e-ef2edb31c19f" />
+
