@@ -131,10 +131,9 @@ cd UnpackEA-Graphics-Lirbray-Wii
 - [x] GLB export pipeline
 - [x] Layout C support (track/terrain geometry)
 - [x] Data-driven layout detection (`eagl_layouts.json`)
-- [ ] Character model extraction *(in progress)*
-- [ ] Skeletal / bone data support
-- [ ] Texture extraction and embedding
-- [ ] Full CLI interface
+- [x] Character model extraction *(in testing)*
+- [ ] Skeletal / bone data support *(in progress)*
+- [ ] Blender Plugin
 
 ---
 
