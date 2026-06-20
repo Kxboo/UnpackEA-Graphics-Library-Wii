@@ -18,9 +18,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 - **Binary EAGL Parsing** — Deep binary parsing of EA's proprietary Wii graphics format
 - **Terrain Extraction** — Full reconstruction of large-scale game terrain meshes
-- **Character Model Export** *(In Development)* — Skeletal mesh extraction with geometry and UV mapping
+- **Character Model Export**
 - **GLB Output** — Industry-standard glTF Binary output compatible with all major 3D tools
-- **Mesh Fidelity** — High-accuracy vertex, normal, and UV data reconstruction
 - **Data-Driven Layout Detection** — Descriptor layouts are defined in an external JSON config, making it easy to support new mesh formats without touching parser code
 
 ---
