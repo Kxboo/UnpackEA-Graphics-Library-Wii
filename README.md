@@ -24,6 +24,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 ---
 
 ## Gallery
+### Character Models
+<img width="2112" height="1139" alt="Screenshot 2026-06-19 222532" src="https://github.com/user-attachments/assets/ad835815-c3ff-4c4c-8bd2-f6ef54409592" />
 
 ### Terrain & World Geometry
 
@@ -55,10 +57,10 @@ Character model extraction is actively being developed. Each iteration improves 
 
 ---
 ### Version 9 *(Current)*
-
 <p align="center">
   <img src="[https://github.com/user-attachments/assets/d6015233-1fd4-4586-97f6-2b437e131764](https://github.com/user-attachments/assets/7c32c93f-dca1-4447-80a9-31ce72376ced)" width="80%" />
 </p>
+<img width="2112" height="1139" alt="Screenshot 2026-06-19 222532" src="https://github.com/user-attachments/assets/ad835815-c3ff-4c4c-8bd2-f6ef54409592" />
 <details>
 <summary>Previous Versions</summary>
   
