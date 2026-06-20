@@ -82,11 +82,7 @@ Character model extraction is actively being developed. Each iteration improves 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0696b5ae-ec83-47bb-abde-2701ef331e9d" width="80%" />
 </p>
-### Version 1
 
-<p align="center">
-  <img width="3130" height="1722" alt="Screenshot 2026-06-15 174012" src="https://github.com/user-attachments/assets/6b888909-a229-45cf-8f4d-4ad2b86f4fd9" />
-</p>
 </details>
 
 ---
