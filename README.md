@@ -147,3 +147,5 @@ Contributions, bug reports, and reverse-engineering findings are welcome. Feel f
 ## License
 
 This project is intended for preservation and research purposes. All game assets belong to their respective copyright holders.
+
+This project contains no original game assets.
