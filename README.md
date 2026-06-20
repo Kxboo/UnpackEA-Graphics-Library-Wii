@@ -10,3 +10,11 @@ Extract, parse, and convert Wii EAGL 3D models and terrains into modern GLB file
 <img width="3802" height="1792" alt="image" src="https://github.com/user-attachments/assets/7977d7e1-75d6-4683-b476-0b0257402a18" />
 <img width="3780" height="1822" alt="image" src="https://github.com/user-attachments/assets/5ba5a0cc-1e86-4be0-a89e-ef2edb31c19f" />
 
+## IN DEVELOPMENT (CHARACTER EXPORT)
+### Version 8
+<img width="2098" height="1120" alt="Screenshot 2026-06-19 221309" src="https://github.com/user-attachments/assets/99add145-d321-42a0-bb0f-025e8cae6fbf" />
+<img width="2094" height="1100" alt="Screenshot 2026-06-19 221129" src="https://github.com/user-attachments/assets/352a5630-2043-42df-99ca-e2fdfe68da1c" />
+### Version 7
+<img width="3830" height="1862" alt="Screenshot 2026-06-19 174119" src="https://github.com/user-attachments/assets/d6015233-1fd4-4586-97f6-2b437e131764" />
+### Version 6
+<img width="3837" height="1980" alt="Screenshot 2026-06-19 170921" src="https://github.com/user-attachments/assets/0696b5ae-ec83-47bb-abde-2701ef331e9d" />
