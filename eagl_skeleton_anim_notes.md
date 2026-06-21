@@ -589,3 +589,4 @@ scale/bias key).
   `__Model:::` already handled in `_extract_names()` / `_extract_bbox()` —
   a new `_extract_skeleton_anchor()` / `_extract_animbank_anchor()` helper
   can follow the same shape.
+<img width="2537" height="1235" alt="image" src="https://github.com/user-attachments/assets/8a25de75-f181-4510-9715-8f56f9d22eb9" />
