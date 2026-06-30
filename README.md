@@ -48,7 +48,9 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ea0c8419-4577-46d1-a399-42ae9b2b9741" width="49%" />
   <img src="https://github.com/user-attachments/assets/d2b48cc6-6ffa-4a23-9b26-b99523091775" width="49%" />
-  <img width="2535" height="1249" alt="image" src="https://github.com/user-attachments/assets/5a6be123-65f3-4272-8fad-44c004e87c26" />
+  <img width="800" height="356" alt="gif" src="https://github.com/user-attachments/assets/8d89b320-4c1b-4fef-9632-9c9be702a86c" />
+
+
 
 </p>
 
