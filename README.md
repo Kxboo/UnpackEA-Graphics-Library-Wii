@@ -30,6 +30,7 @@ This project bridges the gap between legacy console game assets and modern tooli
 ### Terrain & World Geometry
 <p align="center">
   <img src="https://github.com/user-attachments/assets/685c1258-28e8-4701-9211-1a41e5e1690e" width="49%" />
+  <img width="2089" height="1090" alt="image" src="https://github.com/user-attachments/assets/bf71b832-d80b-43d5-bbbf-7ad1e94a832a" />
   <img src="https://github.com/user-attachments/assets/35a0fdb1-4799-4cb2-8f8e-f9424e142147" width="49%" />
 </p>
 
