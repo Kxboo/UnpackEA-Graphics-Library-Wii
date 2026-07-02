@@ -16,7 +16,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 - **Binary EAGL Parsing** — Deep binary parsing of EA's proprietary Wii graphics format
 - **Terrain Extraction** — Full reconstruction of large-scale game terrain meshes
-- **Character Model Export** — *(bone support in progress)*
+- **Character Model Export** - Static mesh
+- **Skeletal Support** — *(weights support with models in progress)*
 - **GLB Output** — Industry-standard glTF Binary output compatible with all major 3D tools
 - **Data-Driven Layout Detection** — Descriptor layouts are defined in an external JSON config, making it easy to support new mesh formats without touching parser code
 
@@ -142,8 +143,8 @@ cd UnpackEA-Graphics-Lirbray-Wii
 - [x] Character model extraction
 - [x] Built-in parser for compressed .gsh textures
 - [x] Code review and rewrite for edge cases
-- [x] Skeletal / bone data support 
-- [ ] Animations *(in progress)*
+- [x] Skeletal support 
+- [ ] Animations and Weights *(in progress)*
 - [ ] Batch Processing
 - [ ] Blender Plugin
 - [ ] Integrated BIG Archive extract
