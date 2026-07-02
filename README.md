@@ -59,7 +59,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7c32c93f-dca1-4447-80a9-31ce72376ced" width="80%" />
 </p>
-<img width="1907" height="1072" alt="image" src="https://github.com/user-attachments/assets/7a8f184a-578f-4553-9a7f-3d275a80981f" />
+<img width="1907" height="1072" alt="Screenshot 2026-07-02 092528" src="https://github.com/user-attachments/assets/f010026e-e3b5-441b-a8b4-c2dc18da5d33" />
+
 
 
 Fixes a class of silent-corruption bugs in the GX display list reader where a mis-guessed vertex stride could produce confidently-wrong geometry instead of visibly failing.
