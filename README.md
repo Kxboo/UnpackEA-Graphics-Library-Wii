@@ -55,7 +55,7 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 ---
 
-### Version 9 *(Current — Character Models)*
+### Version 9 *(Current)*
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7c32c93f-dca1-4447-80a9-31ce72376ced" width="80%" />
 </p>
