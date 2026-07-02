@@ -135,11 +135,10 @@ cd UnpackEA-Graphics-Lirbray-Wii
 
 ## Roadmap
 
-- [x] Terrain mesh extraction
 - [x] Static 3D model extraction
 - [x] GLB export pipeline
-- [x] Layout C support (track/terrain geometry)
 - [x] Data-driven layout detection (`eagl_layouts.json`)
+- [x] Terrain Support
 - [x] Character model extraction
 - [x] Built-in parser for compressed .gsh textures
 - [x] Code review and rewrite for edge cases
