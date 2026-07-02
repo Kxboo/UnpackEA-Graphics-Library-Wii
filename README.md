@@ -37,14 +37,14 @@ This project bridges the gap between legacy console game assets and modern tooli
 ### 3D Model Extraction
 
 <p align="center">
-  <img width="1723" height="1095" alt="image" src="https://github.com/user-attachments/assets/d4e2d36e-f57e-4a8d-aa6d-993867566c31" />
+  <img width="1723" height="1095" alt="Screenshot 2026-07-02 082427" src="https://github.com/user-attachments/assets/a601bccd-e2b5-4290-a3da-798f60b7c871" />
+
+</p>
+<p align="center">
+
+</p>
+<p align="center">
   <img src="https://github.com/user-attachments/assets/a849cbdc-e127-4911-b255-df8b6879ba48" width="49%" />
-
-</p>
-<p align="center">
-
-</p>
-<p align="center">
   <img src="https://github.com/user-attachments/assets/ea0c8419-4577-46d1-a399-42ae9b2b9741" width="49%" />
   <img src="https://github.com/user-attachments/assets/d2b48cc6-6ffa-4a23-9b26-b99523091775" width="49%" />
 </p>
