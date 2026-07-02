@@ -1,4 +1,3 @@
-
 # UnpackEA Graphics Library — Wii
 
 > Extract, parse, and convert Wii EA Graphics Library (EAGL) 3D models and terrains into modern GLB files.
@@ -48,10 +47,6 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ea0c8419-4577-46d1-a399-42ae9b2b9741" width="49%" />
   <img src="https://github.com/user-attachments/assets/d2b48cc6-6ffa-4a23-9b26-b99523091775" width="49%" />
-  
-
-
-
 </p>
 
 ---
@@ -66,8 +61,13 @@ This project bridges the gap between legacy console game assets and modern tooli
 </p>
 <img width="2168" height="1125" alt="image" src="https://github.com/user-attachments/assets/75bacc88-d569-4832-a3f3-05531b5cffbb" />
 
+Fixes a class of silent-corruption bugs in the GX display list reader where a mis-guessed vertex stride could produce confidently-wrong geometry instead of visibly failing.
 
-Continued refinement of character geometry extraction. Builds on the UV and normal reconstruction improvements from v8, with further accuracy gains in mesh topology and edge cases in the GX display list reader for character-specific descriptors.
+- **Bounds-check normal indices in `_scan_gx_strips`** — the stride-probe scorer (`_validate_stride_gx`) already rejected out-of-range position and UV indices when picking a candidate stride, but the final triangle-extraction step only checked pos/uv — the computed `max_norm` bound was discarded before reaching `_scan_gx_strips`. A slightly-off stride guess could therefore let garbage bytes decode as valid-looking normal indices and pass straight into the output mesh. `_scan_gx_strips` now takes an explicit `max_norm` parameter and rejects any strip whose normal index exceeds it, matching the existing pos/uv behavior.
+- **Full combinatorial stride probing** — `_validate_stride_gx` previously only flipped the UV size when searching for the correct stride. It now probes every combination of `pos_sz` / `norm_sz` / `uv_sz`, re-scoring each. Small declared arrays — common in low-LOD B2 terrain meshes with very few unique normals — make the attribute table's `INDEX8`/`INDEX16` format byte ambiguous for position and normal too, not just UV.
+- **0-score fallback** — if every candidate width combination (including the original attribute-table guess) scores zero, `_validate_stride_gx` now returns the original guess unchanged instead of arbitrarily picking a tied "winner." A genuine 0-score result means no tried width is correct, so it now surfaces as an empty mesh for investigation rather than confidently-wrong geometry.
+
+> **Net effect on ALL FILES: including `world-low-all.o`:** 65,132 → 98,402 triangles, with **zero** remaining out-of-bounds normal-index references across all 631 meshes (previously ~50% of B2 meshes had normal-index utilization over 100%, i.e. referenced indices past the end of their own normals array).
 
 <details>
 <summary>Previous Versions</summary>
@@ -79,7 +79,12 @@ Continued refinement of character geometry extraction. Builds on the UV and norm
   <img src="https://github.com/user-attachments/assets/352a5630-2043-42df-99ca-e2fdfe68da1c" width="49%" />
 </p>
 
-Improved UV mapping reconstruction and normal data handling for character meshes. Addressed seam artifacts and per-vertex attribute misalignment carried over from v7.
+Two-part fix for the `INDEX8`/`INDEX16` stride-detection bug that produced corrupt triangle counts on meshes whose GX attribute list isn't at the expected descriptor offset and/or whose `TEX0` entry uses type `0x00`.
+
+- **Part A — invalid attribute offset recovery** (`_parse_mesh`): a valid GX attribute list always starts with `byte[0] == 0x09` (`GX_VA_POS`). When the byte at the expected `off_attr` position isn't `0x09`, the parser now tries `off_attr + 8` before falling back. This fixes descriptors where the tail of a preceding pointer field occupies the primary slot, pushing the real attribute list 8 bytes further than the layout definition expects.
+- **Part B — `uv_type == 0x00` inference** (`_detect_stride`): GX encodes "attribute not present" as type `0x00`. Some files write `0x00` for the `TEX0` entry even when the GX stream clearly uses `INDEX16` for UVs (mesh has >255 UV entries). `_detect_stride` now infers `INDEX16` for the UV channel when both position and normal are `INDEX16` and `uv_type` reads `0x00`, preventing silent `INDEX8` truncation that produced out-of-range indices.
+
+Also carries over the data-driven layout detection system from v6/v7 (see below) with no further changes to it in this release.
 
 ---
 
