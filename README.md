@@ -24,14 +24,11 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 ## Gallery
 ### Character Models
-<img width="2080" height="1093" alt="image" src="https://github.com/user-attachments/assets/aa6a0ba2-4446-4ff5-ac3a-249d7a78fcf0" />
-
+<img width="1907" height="1072" alt="Screenshot 2026-07-02 092528" src="https://github.com/user-attachments/assets/f010026e-e3b5-441b-a8b4-c2dc18da5d33" />
 
 ### Terrain & World Geometry
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/685c1258-28e8-4701-9211-1a41e5e1690e" width="49%" />
   <img width="800" height="356" alt="gif" src="https://github.com/user-attachments/assets/8d89b320-4c1b-4fef-9632-9c9be702a86c" />
-  <img src="https://github.com/user-attachments/assets/35a0fdb1-4799-4cb2-8f8e-f9424e142147" width="49%" />
 </p>
 
 ### 3D Model Extraction
@@ -59,8 +56,7 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7c32c93f-dca1-4447-80a9-31ce72376ced" width="80%" />
 </p>
-<img width="1907" height="1072" alt="Screenshot 2026-07-02 092528" src="https://github.com/user-attachments/assets/f010026e-e3b5-441b-a8b4-c2dc18da5d33" />
-
+<img width="2080" height="1093" alt="image" src="https://github.com/user-attachments/assets/aa6a0ba2-4446-4ff5-ac3a-249d7a78fcf0" />
 
 
 Fixes a class of silent-corruption bugs in the GX display list reader where a mis-guessed vertex stride could produce confidently-wrong geometry instead of visibly failing.
