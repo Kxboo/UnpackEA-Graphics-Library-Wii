@@ -141,11 +141,11 @@ cd UnpackEA-Graphics-Lirbray-Wii
 - [x] Data-driven layout detection (`eagl_layouts.json`)
 - [x] Character model extraction
 - [x] Built-in parser for compressed .gsh textures
-- [ ] Code Review and rewrite for performance/edge cases *(in progress)*
-- [ ] Skeletal / bone data support *(in progress)*
+- [x] Code review and rewrite for edge cases
+- [x] Skeletal / bone data support 
 - [ ] Animations *(in progress)*
-- [ ] Blender Plugin
 - [ ] Batch Processing
+- [ ] Blender Plugin
 - [ ] Integrated BIG Archive extract
 
 ---
