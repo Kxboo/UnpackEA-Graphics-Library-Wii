@@ -25,7 +25,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 ## Gallery
 ### Character Models
-<img width="2112" height="1139" alt="Screenshot 2026-06-19 222532" src="https://github.com/user-attachments/assets/ad835815-c3ff-4c4c-8bd2-f6ef54409592" />
+<img width="2080" height="1093" alt="image" src="https://github.com/user-attachments/assets/aa6a0ba2-4446-4ff5-ac3a-249d7a78fcf0" />
+
 
 ### Terrain & World Geometry
 <p align="center">
@@ -37,7 +38,7 @@ This project bridges the gap between legacy console game assets and modern tooli
 ### 3D Model Extraction
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/71defffe-eb6c-43ff-8fe5-a15fedbabbac" width="49%" />
+  <img width="1723" height="1095" alt="image" src="https://github.com/user-attachments/assets/d4e2d36e-f57e-4a8d-aa6d-993867566c31" />
   <img src="https://github.com/user-attachments/assets/a849cbdc-e127-4911-b255-df8b6879ba48" width="49%" />
 
 </p>
@@ -47,7 +48,6 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ea0c8419-4577-46d1-a399-42ae9b2b9741" width="49%" />
   <img src="https://github.com/user-attachments/assets/d2b48cc6-6ffa-4a23-9b26-b99523091775" width="49%" />
-  <img width="2535" height="1249" alt="image" src="https://github.com/user-attachments/assets/5a6be123-65f3-4272-8fad-44c004e87c26" />
   
 
 
@@ -64,7 +64,8 @@ This project bridges the gap between legacy console game assets and modern tooli
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7c32c93f-dca1-4447-80a9-31ce72376ced" width="80%" />
 </p>
-<img width="2087" height="1093" alt="Screenshot 2026-06-19 232759" src="https://github.com/user-attachments/assets/924dabdf-300f-4431-9fb1-06a8d7c16d73" />
+<img width="2168" height="1125" alt="image" src="https://github.com/user-attachments/assets/75bacc88-d569-4832-a3f3-05531b5cffbb" />
+
 
 Continued refinement of character geometry extraction. Builds on the UV and normal reconstruction improvements from v8, with further accuracy gains in mesh topology and edge cases in the GX display list reader for character-specific descriptors.
 
