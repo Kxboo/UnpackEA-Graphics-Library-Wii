@@ -128,8 +128,7 @@ The fix bounds the scan window by the **next mesh's actual position-array pointe
 
 ```bash
 # Clone the repository
-git clone https://github.com/sirshoqckings/UnpackEA-Graphics-Lirbray-Wii.git
-cd UnpackEA-Graphics-Lirbray-Wii
+
 ```
 
 ---
