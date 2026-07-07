@@ -29,6 +29,7 @@ This project bridges the gap between legacy console game assets and modern tooli
 
 ### Terrain & World Geometry
 <p align="center">
+ <img width="666" height="375" alt="terrain-removebg-preview" src="https://github.com/user-attachments/assets/c813dfc7-f2e5-496d-ad84-e562d942b89b" />
   <img width="800" height="356" alt="gif" src="https://github.com/user-attachments/assets/8d89b320-4c1b-4fef-9632-9c9be702a86c" />
 </p>
 
