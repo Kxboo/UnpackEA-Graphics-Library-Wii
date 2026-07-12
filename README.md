@@ -143,7 +143,8 @@ The fix bounds the scan window by the **next mesh's actual position-array pointe
 - [x] Built-in parser for compressed .gsh textures
 - [x] Code review and rewrite for edge cases
 - [x] Skeletal support 
-- [ ] Animations and Weights *(in progress)*
+- [x] Animation Support *(under reivew)*
+- [ ] Animation, weights to mesh *(in progress)*
 - [ ] Batch Processing
 - [ ] Blender Plugin
 - [ ] Integrated BIG Archive extract
