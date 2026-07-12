@@ -52,7 +52,7 @@ The project bridges legacy console assets and modern tooling while documenting t
 
 ## Version History
 
-### Version 10 *(Current — Complete Animation Pipeline)*
+### Version 10 *(Current — Animation Pipeline)*
 
 Animation support is now complete for the current EA Playground `player_anims.anm` bank: **265/265 clips export successfully to GLB**, with zero structural export failures and zero out-of-range bone references.
 
