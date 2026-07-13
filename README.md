@@ -34,7 +34,6 @@ The project bridges legacy console assets and modern tooling while documenting t
 
 ### Terrain & World Geometry
 <p align="center">
- <img width="666" height="375" alt="terrain-removebg-preview" src="https://github.com/user-attachments/assets/c813dfc7-f2e5-496d-ad84-e562d942b89b" />
   <img width="800" height="356" alt="gif" src="https://github.com/user-attachments/assets/8d89b320-4c1b-4fef-9632-9c9be702a86c" />
 </p>
 
@@ -54,9 +53,18 @@ The project bridges legacy console assets and modern tooling while documenting t
 
 ### Version 10 *(Current — Animation Pipeline)*
 
-Animation support is now complete for the current EA Playground `player_anims.anm` bank: **265/265 clips export successfully to GLB**, with zero structural export failures and zero out-of-range bone references.
+Animation support is now complete for the current EA Playground `.anm` bank, with zero structural export failures and zero out-of-range bone references.
 
-The exporter combines the `.anm` bank with the 68-bone `.ske` skeleton and produces one animated GLB per clip. Its five observed runtime codecs were decoded from the game's Gekko/Broadway PowerPC implementation and validated across the full corpus:
+
+
+https://github.com/user-attachments/assets/8a92baef-43e4-4bd3-ad7b-018bfa22a585
+
+
+
+
+
+
+The exporter combines the `.anm` bank with the 68-bone `.ske` skeleton and produces animated GLB clips. Its five observed runtime codecs were decoded from the game's Gekko/Broadway PowerPC implementation and validated across the full corpus:
 
 | Codec combination | Clips | Exported data |
 |---|---:|---|
@@ -73,7 +81,7 @@ Key improvements:
 - **Stateless animation support** — keyframe-based quaternion and vector tracks, including runtime-style interpolation, are exported for the 12 previously uncovered clips.
 - **Complementary rotation tracks** — the nine `FnDeltaSingleQ` clips are correctly handled as two non-overlapping rotation tracks, not rotation plus translation.
 
-> Known limits: sparse stateless keyframe-time tables are not exercised by this corpus; extra stateless channels fall back to bind pose; playback timing currently uses a documented 30 FPS placeholder. Runtime and numeric validation are complete, but a final visual check in Blender remains worthwhile for confirming coordinate and quaternion conventions.
+> Known limits: Edge case sparse stateless keyframe-time tables are not exercised by this corpus; extra stateless channels fall back to bind pose; playback timing currently uses a documented 30 FPS placeholder. Runtime and numeric validation are complete, but a final visual check in Blender remains worthwhile for confirming coordinate and quaternion conventions.
 
 <details>
 <summary>Previous Versions</summary>
@@ -127,9 +135,6 @@ Fixed mesh-boundary detection in the GX scanner. Scan ranges are now bounded by 
 # Clone the repository
 git clone <repository-url>
 cd <repository-directory>
-
-# Export the current animation corpus
-python anm_exporter.py
 ```
 
 ---
