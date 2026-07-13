@@ -16,9 +16,9 @@ The project bridges legacy console assets and modern tooling while documenting t
 
 - **Binary EAGL Parsing** — Deep parsing of proprietary Wii EAGL asset formats
 - **Terrain Extraction** — Reconstruction of large-scale game terrain and world geometry
-- **Character Model Export** — Static character mesh extraction with skeleton-aware export
-- **Skeletal Export** — 68-bone hierarchy, names, and bind-pose parsing
-- **Full Animation Export** — All 265 clips in the current `player_anims.anm` corpus export to GLB
+- **Character Model Export** — Static character mesh extraction with optional skeleton export
+- **Skeletal Export**
+- **Animation Export** 
 - **GLB Output** — Standards-compliant glTF Binary for major 3D tools
 - **GX Display List Recovery** — Defensive vertex-stride detection and bounds validation to prevent silent geometry corruption
 - **Codec Validation** — Decoder layouts, channel mapping, and output ranges are checked against the game executable and corpus-wide regression tests
@@ -64,7 +64,7 @@ The exporter combines the `.anm` bank with the 68-bone `.ske` skeleton and produ
 | `FnDeltaQFast` + `FnDeltaF1` | 20 | Quaternion rotation + single-axis translation |
 | `FnDeltaSingleQ` + `FnDeltaQFast` | 9 | Two complementary rotation tracks |
 | `FnStatelessQ` + `FnStatelessF3` | 12 | Keyframe quaternion rotation + vector translation |
-| **Total** | **265** | **One GLB per clip** |
+
 
 Key improvements:
 
@@ -72,7 +72,6 @@ Key improvements:
 - **Correct bone/channel resolution** — vector-channel entries use the engine’s encoded pose-target layout, avoiding the earlier incorrect `entry // 3` interpretation.
 - **Stateless animation support** — keyframe-based quaternion and vector tracks, including runtime-style interpolation, are exported for the 12 previously uncovered clips.
 - **Complementary rotation tracks** — the nine `FnDeltaSingleQ` clips are correctly handled as two non-overlapping rotation tracks, not rotation plus translation.
-- **Clean-room regression** — a fresh installation exported all 265 clips successfully; the regenerated GLBs matched the development output byte-for-byte.
 
 > Known limits: sparse stateless keyframe-time tables are not exercised by this corpus; extra stateless channels fall back to bind pose; playback timing currently uses a documented 30 FPS placeholder. Runtime and numeric validation are complete, but a final visual check in Blender remains worthwhile for confirming coordinate and quaternion conventions.
 
@@ -143,10 +142,10 @@ python anm_exporter.py
 - [x] Terrain support
 - [x] Character model extraction
 - [x] Built-in parser for compressed `.gsh` textures
-- [x] Defensive parser rewrite and edge-case review
+- [x] Rewrite and edge-case review
 - [x] Skeletal support
-- [x] Full animation support
-- [ ] Mesh skin weights / fully skinned character export *(in progress)*
+- [x] Animation support
+- [x] Mesh skin weights / fully skinned character export
 - [ ] Batch processing
 - [ ] Blender plugin
 - [ ] Integrated BIG archive extraction
